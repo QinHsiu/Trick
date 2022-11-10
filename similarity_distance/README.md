@@ -52,7 +52,7 @@ $$d(a,b)=1-r(a,b),相关距离$$
 
 ## 11. 信息熵
 
-$$Entropy(a)=\sum^{I}_limits_{i=1}-p_{i}\log_{2}p_i,a=(p_1,p_2,...,p_{I}) $$
+$$Entropy(a)=\sum^{I}\limits_{i=1}-p_{i}\log_{2}p_i,a=(p_1,p_2,...,p_{I}) $$
 
 ## 12. KL散度
 

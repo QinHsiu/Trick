@@ -32,7 +32,7 @@ $$d(a,b)=\sqrt{(x-y)^{T}{\sum}^{-1}(x-y)},a=(x_1,x_2,...,x_{I}),y=(y_1,y_2,...,y
 
 $$d(a,b)=1-\frac{x_1* x_2+y_1* y_2}{\sqrt{x_1^2+y_1^2}*\sqrt{x_2^2+y_2^2}},a=(x_1,y_1),b=(x_2,y_2)$$
 
-$$d(a,b)=1-\frac{\sum^{I}\limits_{i=1}x_i*y_i}{\sqrt{\sum^{I}\limits_{i=1}x_i^2}*\sqrt{\sum^{I}\limits_{i}y_{i}^2}},a=(x_1,x_2,...,x_{I}),b=(y_1,y_2,...,y_{I})$$
+$$d(a,b)=1-\frac{\sum^{I}\limits_{i=1}x_i*y_i}{\sqrt{\sum^{I}\limits_{i=1}x_i^2}*\sqrt{\sum^{I}\limits_{i=1}y_{i}^2}},a=(x_1,x_2,...,x_{I}),b=(y_1,y_2,...,y_{I})$$
 
 ## 8. 汉明距离: 使用了异或
 

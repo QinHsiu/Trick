@@ -48,4 +48,4 @@
 
 ## $$L(p)=-\log\frac{\exp(sim(p,k_{+})/\tau}{\sum^{K}\limits_{i=0}\exp(sim(p,k_{i})/\tau)}$$
 
-### sim()相似度计算，可以采用点积、余弦相似度等（更多相似性度量参看距离度量，[参看](https://github.com/QinHsiu/Trick/tree/main/similarity_distance),tau是温度系数
+### sim()相似度计算，可以采用点积、余弦相似度等（更多相似性度量参看距离度量，[参看](https://github.com/QinHsiu/Trick/tree/main/similarity_distance)),tau是温度系数

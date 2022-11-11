@@ -4,21 +4,31 @@
 """
 
 import numpy as np
+from scipy.spatial import distance
+
 
 # 欧氏距离
 def Euclidean_distance(a,b):
+    # 调包
+    # print(distance.euclidean(a,b))
     return np.sqrt(np.sum((a-b)**2))
 
 # 曼哈顿距离
 def Manhattan_distance(a,b):
+    # 调包
+    # print(distance.cityblock(a,b))
     return np.sum(np.abs(a-b))
 
 # 切比雪夫距离
 def Chebyshev_distance(a,b):
+    # 调包
+    # print(distance.chebyshev(a,b))
     return np.max(np.abs(a-b))
 
 # 闵可夫斯基距离
 def Minkowski_distance(a,b,p):
+    # 调包
+    # print(distance.minkowski(a,b,p))
     return (np.sum(np.abs(a-b)**p))**(1/p)
 
 # 标准化欧氏距离
@@ -43,14 +53,20 @@ def Marginal_distance(a,b):
 
 # 夹角余弦
 def Cosin(a,b):
-    return np.sum(a*b)/(np.sqrt(np.sum(a**2))*np.sqrt(np.sum(b**2)))
+    # 调包
+    # print(distance.cosine(a,b))
+    return 1-np.sum(a*b)/(np.sqrt(np.sum(a**2))*np.sqrt(np.sum(b**2)))
 
 # 汉明距离
 def Hanming_distance(a,b):
-    return np.sum(np.logical_xor(a,b))
+    # 调包
+    # print(distance.hamming(a,b))
+    return 1-np.sum(np.logical_xor(a,b))
 
 # 杰卡德距离
 def Jacquard_distance(a,b):
+    # 调包
+    # print(distance.jaccard(a,b))
     # 杰卡德相似系数
     j_=np.sum(np.where(a==b))/len(np.union1d(a,b))
     return 1-j_
@@ -60,8 +76,6 @@ def Correlation_distance(a,b):
     # 相关系数
     r_=np.corrcoef(a,b)
     return 1-r_
-
-
 
 # 信息熵
 def Entropy_distance(a):
@@ -86,6 +100,16 @@ def Wasserstein(a,b):
 def Dot_distance(a,b):
     return np.dot(a,b)
 
+# 半正矢距离
+from sklearn.metrics.pairwise import haversine_distances
+def Haversine_distance(a,b):
+    return haversine_distances([a,b])
+
+# Sorensen-Dice指数
+def Sorensen_distacne(a,b):
+    # 调包
+    # print(distance.dice(a,b))
+    return distance.dice(a,b)
 
 if __name__ == '__main__':
     a_=np.random.random((1,10))
@@ -133,8 +157,17 @@ if __name__ == '__main__':
     jl=JL_distance(a_,b_)
     print("JL散度=",jl)
 
+    jaccard=Jacquard_distance(a_,b_)
+    print("Jaccard距离=",jaccard)
+
     wasserstein=wasserstein_distance(a_[0],b_[0])
     print("Wasserstein距离=",wasserstein)
+
+    haversine=Haversine_distance(a_[0][:2],b_[0][:2])
+    print("Haversine距离=",haversine)
+
+    sorensen=Sorensen_distacne(a_[0],b_[0])
+    print("Sorensen距离=",sorensen)
 
 
 

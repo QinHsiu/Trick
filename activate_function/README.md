@@ -20,7 +20,7 @@ $$f(x)=\frac{1}{1+e^{-x}}$$
 
 ## 4. Hard_sigmoid激活函数
 
-$$f(x)=\left\{\begin{array}{**lr**}0 &x\textless -2.5\\0.2*x+0.5&-2.5 \leq x\leq2.5\\1&x\textgreater 2.5\\ \end{array}\right.$$
+$$f(x)=\left\{\begin{array}{**lr**}0 &x\textless -2.5\\ 0.2*x+0.5&-2.5 \leq x\leq2.5 \\1&x\textgreater 2.5 \\ \end{array}\right.$$
 
 ![avator](pic/hard_sigmoid.png)
 

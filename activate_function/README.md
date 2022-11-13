@@ -56,19 +56,19 @@ $$f(x)=softplus(x)=\log(e^{x}+1)$$
 
 ## 10. ThresholdedReLU激活函数
 
-$$f(x)=ThresholdedReLU(x,\theta)=\max(x,\theta)=\left\{\begin{array}{**lr**}0&x\leq \theta\\x&x\textgreater\theta\end{array}\right.$$
+$$f(x)=ThresholdedReLU(x,\theta)=\max(x,\theta)=\left\\{\begin{array}{**lr**}0&x\leq \theta \\\\ x & x\textgreater\theta\end{array}\right.$$
 
 ![avator](pic/thresholdedrelu.png)
 
 ## 11. LeakyReLU激活函数
 
-$$f(x)=LeakyReLU(x,\alpha)=\left\{\begin{array}{**lr**}\alpha*x&x\textless0\\x&0\leq x\end{array}\right.$$
+$$f(x)=LeakyReLU(x,\alpha)=\left\\{\begin{array}{**lr**}\alpha*x&x\textless0 \\\\ x&0\leq x\end{array}\right.$$
 
 ![avator](pic/leakyrelu.png)
 
 ## 12.  ELU激活函数
 
-$$f(x)=elu(x,\alpha)=\left\{\begin{array}{**lr**}\alpha(e^{x}-1)&x\textless0\\x&0\leq x\end{array}\right.$$
+$$f(x)=elu(x,\alpha)=\left\\{\begin{array}{**lr**}\alpha(e^{x}-1)&x\textless0\\\\x&0\leq x\end{array}\right.$$
 
 ![avator](pic/elu.png)
 

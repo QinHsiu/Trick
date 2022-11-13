@@ -28,7 +28,7 @@ $$f(\lambda,k)=\frac{{\lambda}^{k}e^{-\lambda}}{k!},\lambda是一个时间单位
 
 ## 5. 指数分布
 
-$$f(x,\lambda)=\left\{\begin{array}{**lr**} \lambda e^{-\lambda x} & 0\leq x\\0&x\textless 0 \end{array}\right.$$
+$$f(x,\lambda)=\left\\{\begin{array}{**lr**} \lambda e^{-\lambda x} & 0\leq x\\\\0&x\textless 0 \end{array}\right.$$
 
 ![avator](./pic/exponent_distribution.png)
 

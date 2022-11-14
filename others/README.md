@@ -10,3 +10,5 @@
 
 ## 5. 优化Pytorch: [传送门](https://mp.weixin.qq.com/s/XbNo22gVmAjEndzLLmnmxQ)
 
+## 6. 学习率衰减: [传送门](https://mp.weixin.qq.com/s/8a3p7fnNIb2hEFFiQZr_ig)
+

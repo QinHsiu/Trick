@@ -182,3 +182,5 @@ torch.as_tensor()
 torch.from_numpy()
 ```
 
+### 17. 其他
+#### (1) 度量学习相关函数: [传送门](https://mp.weixin.qq.com/s/NagauCb6zEJMeCEJx3A27w)

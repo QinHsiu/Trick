@@ -6,3 +6,5 @@
 
 ## 3. 卷积操作: [传送门](https://mp.weixin.qq.com/s/sVH71rtMGOfnkSXEnWJiiQ)
 
+## 4. Dropout操作: [传送门](https://mp.weixin.qq.com/s/UiMbtsxg9w6CnE0witd-Cg)
+

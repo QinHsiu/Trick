@@ -8,3 +8,5 @@
 
 ## 4. Dropout操作: [传送门](https://mp.weixin.qq.com/s/UiMbtsxg9w6CnE0witd-Cg)
 
+## 5. 优化Pytorch: [传送门](https://mp.weixin.qq.com/s/XbNo22gVmAjEndzLLmnmxQ)
+

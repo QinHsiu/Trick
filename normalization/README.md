@@ -106,5 +106,5 @@ $${\sigma}^{i}_{c}=\sqrt{\frac{1}{NH^{i}W^{i}}\sum\limits_{n,y,x}((h^{i}_{n,c,y,
 
 ## Reference
 
-### [传送门](https://zhuanlan.zhihu.com/p/142866736)
+### [传送门1](https://zhuanlan.zhihu.com/p/142866736), [传送门2](https://mp.weixin.qq.com/s/n_twT43ZmQrkBKkAxOKa-Q)
 

@@ -38,7 +38,7 @@ $$\mu=\frac{1}{m}\sum^{m}\limits_{i=1}x_{i}$$
 
 ## 2. LN=>Layer Normalization
 
-$${\mu}^{l}=\frac{1}{H}\sum^{H}\limits_{i=1}a^{l}_{i},{\sigma}^{l}=\sqrt{\frac{1}{H}\sum^{H}\limits_{i=1}(a^{l}_{i}-{\mu}^{l}_{i})^{2}}, H表示隐藏单元的数目$$
+$${\mu}^{l}=\frac{1}{H}\sum^{H}\limits_{i=1}a^{l}_{i},{\sigma}^{l}=\sqrt{\frac{1}{H}{\sum}^{H}\limits_{i=1}(a^{l}_{i}-{\mu}^{l}_{i})^{2}}, H表示隐藏单元的数目$$
 
 ## 3. WN=>Weight Normalization
 
@@ -54,7 +54,7 @@ $$y_{nijk}=\frac{x_{nijk}-\mu_{ni}}{\sqrt{{\sigma}^{2}_{ni}+\epsilon}}$$
 
 $$\mu_{ni}=\frac{1}{HW}\sum^{W}\limits_{l=1}\sum^{H}\limits_{m=1}x_{nilm}$$
 
-$${\sigma}^{2}_{ni}=\frac{1}{HW}\sum^{W}\limits_{i=1}\sum^{H}\limits_{m=1}(x_{nilm}-\mu_{ni})^{2}$$
+$${\sigma}^{2}_{ni}=\frac{1}{HW}{\sum}^{W}\limits_{i=1}\sum^{H}\limits_{m=1}(x_{nilm}-\mu_{ni})^{2}$$
 
 $$N表示批量大小,x\in\mathbb{R}^{N\times C\times W\times H},x_{t}表示第t个元素,k和j为空间维度,i指特征通道,n批量数据中图片的位置$$
 

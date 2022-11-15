@@ -22,11 +22,11 @@
 
 ## 5. HitRate
 
-## $$HR=\frac{\sum^{N}_{i=1}\frac{Hit_{i}}{Rel_{i}}}{N}$$
+## $$HR=\frac{\sum^{N}\limits_{i=1}\frac{Hit_{i}}{Rel_{i}}}{N}$$
 
 ## 6. MRR
 
-## $$\frac{1}{N}\sum^{N}_{i=1}\frac{1}{{rank}_{i}}$$
+## $$\frac{1}{N}\sum^{N}\limits_{i=1}\frac{1}{{rank}_{i}}$$
 
 ## 7. Recall
 

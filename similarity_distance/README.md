@@ -86,3 +86,9 @@ $$d(a,b)=\frac{2|a\cap b|}{|a|+|b|}$$
 
 ### 该指数类似于9中的Jaccard指数，可以衡量样本集的相似性和多样性，计算的是两个集合的重叠百分比
 
+## 17. BiLinear Similarity
+$$d(x,y)=x^{T}Wy+b$$
+
+## 18. TriLinear Similarity
+$$d(x,y)=W^{T}[x,y,x*y]+b$$
+

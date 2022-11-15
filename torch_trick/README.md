@@ -182,5 +182,21 @@ torch.as_tensor()
 torch.from_numpy()
 ```
 
-### 17. 其他
+### 17. 热启动
+#### 在训练一定数量epoch之后，修改学习率（先使用较小的学习率进行训练，然后再使用大的学习率进行训练）
+
+### 18. 根据batch size来设置学习效率
+$$r=0.1*\frac{b}{256}$$
+
+### 19. label smoothing
+#### 人工标注数据中存在不同人标注的结果不一致的情况,因此需要模型降低一点对于标签的信任（过度依赖）
+$$q_{i}=\left\\{\begin{array}1-\epsilom& i=y \\\\ \frac{\epsilon}{K-1}& otherwise\end{array}\right.$$
+
+### 20. 知识蒸馏
+$$\mathcal{L}=\mathcal{L}(p,softmax(z))+T^{2}\mathcal{L}(softmax(\frac{r}{T}),softmax(\frac{z}{T}))$$
+
+### 21. mixup 训练
+$$\left\\{\begin{array}\hat{x}=\lambda x_{i}+(1-\lambda)x_{j} \\\\ \hat{y}= \lambda y_{i}+(1-\lambda)y_{j}\end{array}\right.$$
+
+### 其他
 #### (1) 度量学习相关函数: [传送门](https://mp.weixin.qq.com/s/NagauCb6zEJMeCEJx3A27w)

@@ -14,3 +14,5 @@
 
 ## 7. 分布式训练: [传送门](https://mp.weixin.qq.com/s/2FkBgVfDtPIoRqnOsSQY8A)
 
+## 8. 批量大小: [传送门](https://mp.weixin.qq.com/s/CKhkbbnd2dsq9vYpa6XG0A)
+

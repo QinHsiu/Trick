@@ -12,3 +12,5 @@
 
 ## 6. 学习率衰减: [传送门](https://mp.weixin.qq.com/s/8a3p7fnNIb2hEFFiQZr_ig)
 
+## 7. 分布式训练: [传送门](https://mp.weixin.qq.com/s/2FkBgVfDtPIoRqnOsSQY8A)
+

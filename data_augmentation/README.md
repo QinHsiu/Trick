@@ -32,6 +32,7 @@
 
 ### 注意：2、5、7操作会改变原始序列的长度。
 
+
 ## Reference
 
 ### [1] [CL4SRec](https://arxiv.org/abs/2010.14395)
@@ -42,3 +43,4 @@
 
 ### [4] [AsRep](https://arxiv.org/pdf/2105.00522.pdf)
 
+### 图常用数据增强 [传送门](https://mp.weixin.qq.com/s/MC0GjSsz8wq4iVyeWCq0ig)

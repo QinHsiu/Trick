@@ -84,7 +84,7 @@ $$y=\frac{x-\mathbb{E}[x]}{\sqrt{Var[x]+\epsilon}}\cdot\gamma+\beta,一般的BN�
 
 $$y=\frac{x-\mathbb{E}[x]}{\sqrt{Var[x]+\epsilon}}\cdot\hat\gamma+\hat\beta,改进BN之后的CBN$$
 
-$$\left\{\begin{array}{**lr**}\hat\gamma=\gamma+\triangle\gamma\\\hat\beta=\beta+\triangle\beta\end{array}\right.$$
+$$\left\\{\begin{array}{**lr**}\hat\gamma=\gamma+\triangle\gamma\\\\ \hat\beta=\beta+\triangle\beta\end{array}\right.$$
 
 ## 8. CIN=>Conditional Instance Normalization
 

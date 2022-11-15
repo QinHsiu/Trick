@@ -190,7 +190,7 @@ $$r=0.1*\frac{b}{256}$$
 
 ### 19. label smoothing
 #### 人工标注数据中存在不同人标注的结果不一致的情况,因此需要模型降低一点对于标签的信任（过度依赖）
-$$q_{i}=\left\\{\begin{array} 1\mbf{-} \epsilon& i=y \\\\ \frac{\epsilon}{K-1}& otherwise\end{array}\right.$$
+$$q_{i}=\left\\{\begin{array}{**lr**} 1- \epsilon& i=y \\\\ \frac{\epsilon}{K-1}& otherwise\end{array}\right.$$
 
 ### 20. 知识蒸馏
 $$\mathcal{L}=\mathcal{L}(p,softmax(z))+T^{2}\mathcal{L}(softmax(\frac{r}{T}),softmax(\frac{z}{T}))$$

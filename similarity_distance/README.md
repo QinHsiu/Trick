@@ -48,7 +48,7 @@ $$J_{d}(a,b)=1-J(a,b)=\frac{|a\cup b|-|a \cap b|}{a \cup b},杰卡德距离$$
 
 $$D(x_i,x_j)=\sqrt{(x_i-x_j)^{T}(x_i-x_j)}$$
 
-$$r(a,b)=\frac{Cov(X,Y)}{\sqrt{D(X)D(Y)}}=\frac{E((X-EX)(Y-EY))}{\sqrt{D(X)\sqrt{D(Y)}}}, 相关系数$$
+$$r(a,b)=\frac{Cov(X,Y)}{\sqrt{D(X)D(Y)}}=\frac{E((X-EX)(Y-EY))}{\sqrt{D(X)\sqrt{D(Y)}}}, r为相关系数，D(x)表示方差$$
 
 $$d(a,b)=1-r(a,b),相关距离$$
 

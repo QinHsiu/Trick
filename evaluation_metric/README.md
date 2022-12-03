@@ -32,4 +32,4 @@
 
 ## $$Recall=\frac{TP}{TP+FN}$$
 
-## Code [传送门](https://github.com/QinHsiu/Torch-RecHub)
+## Code [传送门](https://github.com/QinHsiu/Torch-RecHub/blob/main/torch_rechub/basic/metric.py)

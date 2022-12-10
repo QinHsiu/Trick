@@ -56,6 +56,43 @@ def check_process_0():
         time.sleep(0.25)
         text=text+char
 
+# 7. 使用异常检测函数加测异常并做出相应处理
+import os
+def run_command(cmd):
+    return os.system(cmd)
+
+def shutdown(seconds=0,os_="linux"):
+    if os_=="linux":
+        run_command('sudo shutdown -h -t sec %s'%seconds)
+    elif os_=="windows":
+        run_command("shutdown -s -t %s"%seconds)
+
+# 8. create and keep document,创建和保存报告
+import json
+from sklearn.metrics import (accuracy_score,classification_report,confusion_matrix,f1_score,fbeta_score)
+
+
+def get_metrics(y,y_pred,beta=2,average_method="macro",y_encoder=None):
+    if y_encoder:
+        y=y_encoder.inverse_transfrom(y)
+        y_pred=y_encoder.inverse_transfrom(y_pred)
+        return {
+            "accuracy":round(accuracy_score(y,y_pred),4),
+            "f1_score_macro":round(f1_score(y,y_pred,average=average_method),4),
+            "fbeta_score_macro":round(fbeta_score(y,y_pred,beta=beta,average=average_method),4),
+            "report":classification_report(y,y_pred,output_dict=True),
+            "report_csv":classification_report(y,y_pred,output_dict=False).replace('\n','\r\n')
+        }
+def save_metrics(metrics: dict, model_directory, file_name):
+    path = os.path.join(model_directory, file_name + '_report.txt')
+    classification_report_to_csv(metrics['report_csv'], path)
+    metrics.pop('report_csv')
+    path = os.path.join(model_directory, file_name + '_metrics.json')
+    json.dump(metrics, open(path, 'w'), indent=4)
+
+def classification_report_to_csv(metrics, path):
+    pass
+
 if __name__ == '__main__':
     # check_process_0()
     # check_process_1()
